@@ -14,16 +14,16 @@ cout << fixed << setprecision(5);
  float x0, y0, xn, h, yn, slope, a, b;
  int n, k=1;
 
- cout<<"Digite as condicoes iniciais"<< endl;
+ cout<<"Initial conditions: "<< endl;
  cout<<"x0 = ";
  cin>> x0;
  cout<<"y0 = ";
  cin >> y0;
- cout<<"Digite o limite inferior do intervalo: ";
+ cout<<"Lower limit of interval: ";
  cin>> a;
- cout<<"Digite o limite superior do intervalo: ";
+ cout<<"Upper limit of interval: ";
  cin>> b;
- cout<<"Digite o passo de integracao: ";
+ cout<<"Step size: ";
  cin>> h;
 
  n=(b-a)/h;

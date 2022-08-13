@@ -3,7 +3,6 @@
 #include <iomanip>
 
 /* defining ordinary differential equation to be solved */
-/* In this example we are solving dy/dx = x + y */
 #define f(x,y) 2-2*y-exp(-4*x)
 
 using namespace std;
@@ -14,23 +13,23 @@ int main()
     double x0=0, y0=0, h, a=0, b=0, p=0,xn=0,yn=0, f1=0, f2=0, f3=0, f4=0;
     int n=0, k=1;
 
-    cout<<"Digite as condicoes iniciais"<< endl;
+    cout<<"Initial conditions: "<< endl;
     cout<<"x0 = ";
     cin>> x0;
     cout<<"y0 = ";
     cin >> y0;
-    cout<<"Digite o limite inferior do intervalo: ";
+    cout<<"Lower limit of interval: ";
     cin>> a;
-    cout<<"Digite o limite superior do intervalo: ";
+    cout<<"Upper limit of interval: ";
     cin>> b;
-    cout<<"Digite o passo de integracao: ";
+    cout<<"Step size: ";
     cin>> h;
 
     n=(b-a)/h;
 
 
 
-    /* Euler's Method */
+    /* RK's Method */
     cout<<"\nk\tx(k)\ty(k)\n";
     cout<<"------------------------------\n";
 

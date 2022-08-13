@@ -15,16 +15,16 @@ int main()
     double x0=0, y0=0, h, a=0, b=0, p=0,xn=0,yn=0,f0=0, f1=0, f2=0, f3=0, f4=0;
 
 
-    cout<<"Digite as condicoes iniciais"<< endl;
+    cout<<"Initial conditions: "<< endl;
     cout<<"x0 = ";
     cin>> x0;
     cout<<"y0 = ";
     cin >> y0;
-    cout<<"Digite o limite inferior do intervalo: ";
+    cout<<"Lower limit of interval: ";
     cin>> a;
-    cout<<"Digite o limite superior do intervalo: ";
+    cout<<"Upper limit of interval: ";
     cin>> b;
-    cout<<"Digite o passo de integracao: ";
+    cout<<"Step size: ";
     cin>> h;
 
     n=(b-a)/h;
@@ -32,6 +32,8 @@ int main()
 double x[n+1],y[n+1];
 
 
+
+    /* ABM's Method */ 
     cout<<"\nk\tx(k)\ty(k)\n";
     cout<<"------------------------------\n";
 
